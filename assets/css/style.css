@@ -1,0 +1,115 @@
+*{  
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{  
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(55, 2, 48, 0.349);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+header{
+    right: 40%;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerImagem{
+    position: relative;
+    background-color: rgba(11, 13, 40, 0.55);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10vh 5vw;
+    box-shadow: inset 0 0 70px rgb(39, 39, 39);
+    border-radius: 30px;
+    width: 90%;
+    height: 90%;
+}
+
+.buttonLeft, .buttonRight{
+    font-size: 100px;
+    font-weight: 900;
+    color: rgb(170, 222, 205);
+    background-color: rgba(170, 222, 205, 0.2);
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.649);
+}
+
+.imagemTabuleiro{
+    width: 70%;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.649);
+}
+
+
+.displayNone{
+    display: none;
+}
+
+img{
+    border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+    .containerImagem{
+        padding: 3vh 3vw;
+        width: 98%;
+        height: 90%;
+    }
+    
+    .buttonLeft{
+        font-size: 50px;
+        position: absolute;
+        bottom: 10px;
+        left: 25vw;
+        width: 150px;
+        text-align: center;
+    }
+    .buttonRight{
+        font-size: 50px;
+        position: absolute;
+        bottom: 10px;
+        right: 25vw;
+        width: 150px;
+        text-align: center;
+    }
+    .imagemTabuleiro{
+        width: 80%;
+        margin: 1vh 1vw 14vh 1vw;
+    }
+}
+
+@media (max-width: 680px) {
+    .buttonLeft{
+        bottom: 20px;
+        left: 10vw;
+        width: 100px;
+
+    }
+    .buttonRight{
+        bottom: 20px;
+        right: 10vw;
+        width: 100px;
+ 
+    }
+}
